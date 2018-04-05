@@ -9,11 +9,12 @@ import com.phptravels.utils.TestBase;
 public class HomeTests extends TestBase {
 	HomePage homePage;
 
-	@Test
+	@Test(priority=1)
 	public void validate_HomePage() throws InterruptedException{
-		homePage.clickOnHotels();
+		//homePage.clickOnHotels();
 		//homePage.clickOnFlights();
 		//homePage.enterLocationInfo("Bangalore");
+		System.out.println("Home Tests");
 		
 	}
 	

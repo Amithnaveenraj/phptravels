@@ -3,13 +3,14 @@ package com.phptravels.utils;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 import com.phptravels.utils.WebDriverHelper;
 
 public class TestBase {
 	WebDriver driver;
 	
-	@BeforeClass
+	@BeforeSuite
 	public void beforeAllClasses(){
 		driver=WebDriverHelper.createDriver("Chrome");
 		

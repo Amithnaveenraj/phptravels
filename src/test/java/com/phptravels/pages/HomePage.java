@@ -1,5 +1,6 @@
 package com.phptravels.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,9 @@ public class HomePage extends BasePage{
 	
 	public void clickOnVisaTab(){
 		tabVisa.click();
+		driver.findElement(By.xpath("//*[@id='s2id_autogen2']/a/span[1]")).sendKeys("India");
+		driver.findElement(By.xpath("//*[@id='s2id_autogen4']/a/span[1]")).sendKeys("Australia");
+		driver.findElement(By.xpath("//*[@id='VISA']/form/div[2]/div/button")).click();
 	}
 	
 	public void clickOnHotels(){
